@@ -19,11 +19,52 @@ body {
   "sidebar header"
   "sidebar content"
   ;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+#container > div {
+  border-radius: 24px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 #header {
   background-color: #fcfcfc;
   grid-area: header;
+  padding: 1rem 2rem;
+  display: grid;
+}
+
+#header-top {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  height: max-content;
+}
+
+#search-bar {
+  height: 35px;
+  width: 400px;
+  border: none;
+  background-color: #f2f0f0;
+  border-radius: 20px;
+
+}
+
+#search-bar::placeholder {
+  transform: translateX(1.5rem)
+}
+
+#notifications {
+  margin-right: 1rem;
+  font-size: 1.2rem;
+}
+
+#notifications-avatar {
+  margin-left: auto;
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
 }
 
 #sidebar {
@@ -34,4 +75,11 @@ body {
 #content {
   background-color: #f2f0f0;
   grid-area: content;
+}
+
+.avatar {
+  width: 35px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 50px;
 }
