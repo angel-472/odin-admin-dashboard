@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+#container {
+  width: 100vw;
+  height: 100vh;
+
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 3fr;
+  grid-template-areas:
+  "sidebar header"
+  "sidebar content"
+  ;
+}
+
+#header {
+  background-color: #fcfcfc;
+  grid-area: header;
+}
+
+#sidebar {
+  background-color: #58afdb;
+  grid-area: sidebar;
+}
+
+#content {
+  background-color: #f2f0f0;
+  grid-area: content;
+}
